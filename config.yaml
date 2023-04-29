@@ -1,0 +1,5 @@
+name: AdvancedMath
+author: Seesi
+version: 0.0.1
+requirements:
+    - https://github.com/seesi8/HalSimpleMath.git
