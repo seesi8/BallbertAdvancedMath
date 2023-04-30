@@ -2,10 +2,10 @@ import random
 import time
 from math import sqrt
 
-from Classes import Response
-from Decorators import reg
+from Hal.Classes import Response
+from Hal.Decorators import reg
 
-from SimpleMath import SimpleMath
+from ..SimpleMath import SimpleMath
 
 
 class Wait_Skill:
