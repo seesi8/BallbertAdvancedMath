@@ -8,7 +8,7 @@ from Hal.Decorators import reg
 from Skills.SimpleMath import SimpleMath
 
 
-class Wait_Skill:
+class AdvancedMath:
     @reg(name="Add")
     def exponent(base: "number", exp: "number"):
         base = int(a)
