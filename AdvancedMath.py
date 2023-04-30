@@ -5,7 +5,7 @@ from math import sqrt
 from Hal.Classes import Response
 from Hal.Decorators import reg
 
-from ..SimpleMath import SimpleMath
+from Skills.SimpleMath import SimpleMath
 
 
 class Wait_Skill:
