@@ -24,7 +24,7 @@ class AdvancedMath:
         return Response(suceeded=True, data=sqrt(base))
     
     @reg(name="Get Number")
-    def get_num():
+    def get_num(self):
         num = self.get("my_number")
         return Response(suceeded=True, data=num)
     
