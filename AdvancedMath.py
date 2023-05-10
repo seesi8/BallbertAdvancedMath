@@ -9,7 +9,7 @@ from Skills.SimpleMath import SimpleMath
 
 
 class AdvancedMath:
-    @reg(name="Add")
+    @reg(name="Exponent")
     def exponent(base: "number", exp: "number"):
         base = int(a)
         exp = int(b)
@@ -18,7 +18,14 @@ class AdvancedMath:
             power = SimpleMath.multiply(power, base)
         return Response(suceeded=True, data=power)
 
-    @reg(name="Multiply")
+    @reg(name="Square Root")
     def square_root(base: "number"):
         base = int(base)
         return Response(suceeded=True, data=sqrt(base))
+    
+    @reg(name="Get Number")
+    def get_num():
+        num = self.get("my_number")
+        return Response(suceeded=True, data=num)
+    
+    
