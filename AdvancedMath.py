@@ -4,11 +4,12 @@ from math import sqrt
 
 from Hal.Classes import Response
 from Hal.Decorators import reg
+from Hal.Skill import Skill
 
 from Skills.SimpleMath import SimpleMath
 
 
-class AdvancedMath:
+class AdvancedMath(Skill):
     @reg(name="Exponent")
     def exponent(base: "number", exp: "number"):
         base = int(a)
