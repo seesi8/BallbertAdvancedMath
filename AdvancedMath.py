@@ -15,8 +15,8 @@ class AdvancedMath(Skill):
     
     @reg(name="Exponent")
     def exponent(self, base: "number", exp: "number"):
-        base = int(a)
-        exp = int(b)
+        base = int(base)
+        exp = int(exp)
         power = base
         for i in range(1, exp):
             power = SimpleMath.multiply(power, base)
