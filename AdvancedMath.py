@@ -10,6 +10,9 @@ from Skills.SimpleMath import SimpleMath
 
 
 class AdvancedMath(Skill):
+    def __init__(self):
+        self.my_num = 0
+    
     @reg(name="Exponent")
     def exponent(base: "number", exp: "number"):
         base = int(a)
