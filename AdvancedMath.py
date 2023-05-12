@@ -14,7 +14,7 @@ class AdvancedMath(Skill):
         self.my_num = 0
     
     @reg(name="Exponent")
-    def exponent(base: "number", exp: "number"):
+    def exponent(self, base: "number", exp: "number"):
         base = int(a)
         exp = int(b)
         power = base
@@ -23,7 +23,7 @@ class AdvancedMath(Skill):
         return Response(suceeded=True, data=power)
 
     @reg(name="Square Root")
-    def square_root(base: "number"):
+    def square_root(self, base: "number"):
         base = int(base)
         return Response(suceeded=True, data=sqrt(base))
     
