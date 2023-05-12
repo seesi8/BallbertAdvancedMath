@@ -6,7 +6,7 @@ from Hal.Classes import Response
 from Hal.Decorators import reg
 from Hal.Skill import Skill
 
-from Skills.SimpleMath import SimpleMath
+from Hal import assistant
 
 
 class AdvancedMath(Skill):
@@ -19,7 +19,7 @@ class AdvancedMath(Skill):
         exp = int(exp)
         power = base
         for i in range(1, exp):
-            power = SimpleMath.multiply(power, base)
+            power = assistant.call_function("simplemath.multiply",(power, base))
         return Response(suceeded=True, data=power)
 
     @reg(name="Square Root")
