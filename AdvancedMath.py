@@ -24,9 +24,14 @@ class AdvancedMath(Skill):
         base = int(base)
         return Response(suceeded=True, data=sqrt(base))
     
+    @reg(name="Get My Number")
+    def get_my_num(self):
+        return Response(suceeded=True, data=self.my_num)
+    
     @reg(name="Get Number")
     def get_num(self):
         num = self.get("my_number")
+        self.my_num = 222
         return Response(suceeded=True, data=num)
     
     
