@@ -31,7 +31,10 @@ class AdvancedMath(Skill):
     @reg(name="Get Number")
     def get_num(self):
         num = self.get("my_number")
-        self.my_num = 222
+        if self.my_num:
+            self.my_num += 1
+        else:
+            self.my_num = 222
         return Response(suceeded=True, data=num)
     
     
