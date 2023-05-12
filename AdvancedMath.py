@@ -32,7 +32,7 @@ class AdvancedMath(Skill):
         return Response(suceeded=True, data=self.my_num)
     
     @reg(name="Get Number")
-    def get_num(self):
+    def get_num(self. thing):
         num = self.get("my_number")
         if self.my_num:
             self.my_num += 1
