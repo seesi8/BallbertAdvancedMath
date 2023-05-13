@@ -6,7 +6,8 @@ from Hal.Classes import Response
 from Hal.Decorators import reg
 from Hal.Skill import Skill
 
-from Hal import assistant
+from Hal import initialize_assistant
+assistant = initialize_assistant()
 
 
 class AdvancedMath(Skill):
