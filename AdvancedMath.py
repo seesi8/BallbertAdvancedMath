@@ -19,7 +19,7 @@ class AdvancedMath(Skill):
         exp = int(exp)
         power = base
         for i in range(1, exp):
-            power = assistant.call_function("simplemath.multiply",(power, base))
+            power = assistant.call_function("simplemath.multiply",(power, base)).data
         return Response(suceeded=True, data=power)
 
     @reg(name="Square Root")
