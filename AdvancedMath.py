@@ -19,10 +19,8 @@ class AdvancedMath(Skill):
         """
         Calculate the exponentiation of base raised to the power of exp.
         
-        :param base: The base number.
-        :param exp: The exponent number.
-        :type base: number
-        :type exp: number
+        :param int base: The base number.
+        :param int exp: The exponent number.
         :return: The response object with the calculated power.
         :rtype: Response
         """
@@ -38,8 +36,7 @@ class AdvancedMath(Skill):
         """
         Calculate the square root of a given number.
         
-        :param base: The number to calculate the square root of.
-        :type base: number
+        :param int base: The number to calculate the square root of.
         :return: The response object with the calculated square root.
         :rtype: Response
         """
@@ -57,11 +54,11 @@ class AdvancedMath(Skill):
         return Response(succeeded=True, data=self.my_num)
     
     @reg(name="Get Number")
-    def get_num(self, thing):
+    def get_num(self, thing=None):
         """
         Get the 'my_number' value and increment 'my_num' attribute.
         
-        :param thing: Placeholder argument.
+        :param any? thing: Placeholder argument.
         :return: The response object with the current value of 'my_number'.
         :rtype: Response
         """
