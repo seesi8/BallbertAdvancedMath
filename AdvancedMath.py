@@ -58,7 +58,7 @@ class AdvancedMath(Skill):
         """
         Get the 'my_number' value and increment 'my_num' attribute.
         
-        :param any? thing: Placeholder argument.
+        :param thing: Placeholder argument.
         :return: The response object with the current value of 'my_number'.
         :rtype: Response
         """
