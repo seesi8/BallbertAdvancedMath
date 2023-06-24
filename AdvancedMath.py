@@ -19,8 +19,8 @@ class AdvancedMath(Skill):
         """
         Calculate the exponentiation of base raised to the power of exp.
         
-        :param int base: The base number.
-        :param int exp: The exponent number.
+        :param integer base: The base number.
+        :param integer exp: The exponent number.
         :return: The response object with the calculated power.
         :rtype: Response
         """
@@ -36,7 +36,7 @@ class AdvancedMath(Skill):
         """
         Calculate the square root of a given number.
         
-        :param int base: The number to calculate the square root of.
+        :param integer base: The number to calculate the square root of.
         :return: The response object with the calculated square root.
         :rtype: Response
         """
