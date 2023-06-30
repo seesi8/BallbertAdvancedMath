@@ -9,7 +9,7 @@ skillMetadata:
       - name: Label Field Example
         fields:
           - type: label
-            label: This is descriptive text.
+            value: This is descriptive text.
       - name: Email Field Example
         fields:
           - name: my_email_address
