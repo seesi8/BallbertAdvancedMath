@@ -2,4 +2,4 @@ name: AdvancedMath
 author: Seesi
 version: 0.0.1
 requirements:
-    - https://github.com/seesi8/BallbertSimpleMath.git
+    - https://github.com/seesi8/BallbertSimpleMath.git, 0.0
